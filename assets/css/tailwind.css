@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #f9f7f1;
+    font-family: 'PT Serif', serif;
+    color: #404040;
+}
+
+.navigation {
+    @apply flex justify-evenly text-xl border-t-2 border-b-2 border-black;
+}
+
+.head-main-container {
+    @apply flex justify-center items-center border-b-2 border-black mt-2;
+}
+
+.article {
+    @apply lg:columns-3 md:columns-2 sm:columns-1 p-4;
+}
+
+.article h1 {
+    @apply text-4xl font-bold text-center p-4;
+}
+
+.article p {
+    @apply text-justify p-4;
+}
+
